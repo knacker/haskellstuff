@@ -1,0 +1,19 @@
+quickSort :: Ord a => [a] -> [a]
+quickSort [] = []
+quickSort (x:xs) = let 
+                    s = smaller x xs
+                    m = x : equal x xs
+                    l = larger x xs
+                   in (quickSort s) ++ m ++ (quickSort l)
+                   
+smaller, equal, larger :: (Ord a) => a -> [a] -> [a]
+smaller a [] = []
+smaller a (x:xs) = if x < a then x : (smaller a xs)
+                            else smaller a xs
+larger a [] = []
+larger a (x:xs) = if x > a then x : (larger a xs)
+                           else larger a xs
+equal a [] = []
+equal a (x:xs) = if  x == a then x : (equal a xs)
+                            else equal a xs
+                           

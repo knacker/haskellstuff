@@ -1,0 +1,25 @@
+Zähneputzen :
+Nimm Zahnbürste
+Verteil Zahncreme
+while(!=fertig) {
+schrubbe
+if(sauber) fertig = true;
+}
+Lege Zahnbürste weg
+
+Essen : 
+Nimm essen
+while(!=fertig) { 
+kaue
+if(mundraum == null) fertig = true;
+}
+verdaue
+
+Abschreiben : 
+nimm stift
+lese text
+while(textNeu ist nicht komplett) {
+schreibe text ab
+if(text == fertig) textNeu = komplett;
+}
+lege stift ab

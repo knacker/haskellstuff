@@ -1,0 +1,2 @@
+andWithFoldr ::[Bool] -> Bool
+andWithFoldr (x:xs) = foldr (&&) True xs
